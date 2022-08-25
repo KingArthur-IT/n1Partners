@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'RockStar';
+  src: local("RockStar");
+  src: url("../fonts/RockStar-UltraBlack.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
