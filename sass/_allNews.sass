@@ -1,0 +1,108 @@
+.news
+    margin: auto
+    &__title
+        text-align: center
+    &__subtitle
+        text-align: center
+        max-width: 650px
+        margin: auto
+    &__hero
+        margin-top: 64px
+        margin-bottom: 70px
+        display: flex
+        flex-wrap: wrap
+        width: calc(100% + 24px)
+        margin-left: -12px
+    &__card
+        position: relative
+        margin: 12px
+        width: calc(100%/3 - 24px)
+        background-color: #202020
+    &__img
+        width: 100%
+    &__card-content
+        position: relative
+        padding: 28px 32px 95px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__card-head
+    &__card-date
+        font-weight: 700
+        font-size: 10px
+        line-height: 16px
+        letter-spacing: 0.9px
+        text-transform: uppercase
+        color: #808191
+        opacity: 0.45
+        margin-bottom: 12px
+    &__card-title
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 24px
+        color: #FFFFFF
+        margin-bottom: 16px
+    &__card-footer
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        display: block
+        border-top: 1px solid #27272D
+        padding: 21px 32px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+        &:hover span
+            color: #ff230a
+        &:hover path
+            stroke: #ff230a
+    &__more-details
+        font-weight: 700
+        font-size: 14px
+        line-height: 24px
+        color: #fff
+        transition: color .3s ease
+    &__arrow path
+        stroke: #fff
+        transition: stroke .3s ease
+    &__more-btn-wrap
+        margin-bottom: 140px
+    &__more-btn
+        cursor: pointer
+        width: fit-content
+        margin: auto
+        padding: 16px 55px
+
+@media screen and (max-width: 1440px)
+    .news
+        &__title
+            font-size: 48px
+            margin-bottom: 24px
+        &__card-content
+            padding: 28px 28px 95px
+@media screen and (max-width: 960px)
+    .news
+        &__card
+            width: calc(100%/2 - 24px)
+        &__more-btn-wrap
+            margin-bottom: 100px
+@media screen and (max-width: 720px)
+    .news
+        &__title
+            margin-bottom: 20px
+@media screen and (max-width: 560px)
+    .news
+        &__title
+            font-size: 36px
+            margin-bottom: 18px
+        &__hero
+            width: 100%
+            margin: 60px 0 30px
+        &__card
+            width: 100%
+            margin: 0
+            margin-bottom: 20px
