@@ -235,35 +235,35 @@ textarea {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/RockStar-Regular.woff2") format('woff2');
+  src: url("./fonts/RockStar-Regular.woff2") format('woff2');
 }
 @font-face {
   font-family: 'RockStar';
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/RockStar-Medium.woff2") format('woff2');
+  src: url("./fonts/RockStar-Medium.woff2") format('woff2');
 }
 @font-face {
   font-family: 'RockStar';
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/RockStar-SemiBold.woff2") format('woff2');
+  src: url("./fonts/RockStar-SemiBold.woff2") format('woff2');
 }
 @font-face {
   font-family: 'RockStar';
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/RockStar-Bold.woff2") format('woff2');
+  src: url("./fonts/RockStar-Bold.woff2") format('woff2');
 }
 @font-face {
   font-family: 'RockStar';
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/RockStar-UltraBlack.woff2") format('woff2');
+  src: url("./fonts/RockStar-UltraBlack.woff2") format('woff2');
 }
 *,
 *:before,
