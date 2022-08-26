@@ -23,12 +23,25 @@
             background: #fff
             z-index: 0
             transform: rotate(-2deg)
-    &__img
+    &__img-container
         position: relative
-        padding: 0 40px
         max-width: 1370px
+        padding: 0 40px
         margin: auto
         z-index: 2
+        width: 100%
+        overflow: hidden
+        min-height: 524px
+    &__img
+        background: url('../img/current-news.png') no-repeat
+        background-size: auto 100%
+        background-position-x: center
+        min-height: 524px
+    &__text-container
+        max-width: 1106px
+        margin: auto
+        padding-left: 40px
+        padding-right: 40px
     &__text-wrapper
         background: #fff
         padding-top: 64px
@@ -74,6 +87,18 @@
         padding: 16px 57px
         color: #151515
         border: 1px solid #151515
+        &:hover
+            color: #fff
+    &__mobile-btn
+        position: relative
+        display: none
+        cursor: pointer
+        width: fit-content
+        padding: 16px 57px
+        color: #fff
+        border: 1px solid #fff
+        margin: auto
+        margin-top: 10px
     &__cards-wrap
         display: flex
         width: calc(100% + 20px)
@@ -139,9 +164,66 @@
     .current-news
         &__title
             font-size: 48px
+            line-height: 116%
+            margin-bottom: 32px
+@media screen and (max-width: 1240px)
+    .current-news
+        &__text-container
+            padding-left: 150px
+            padding-right: 150px
+        &__recent
+            &::before
+                left: -50px
+                right: -50px
+                height: 250px
+                transform: rotate(-4deg)
 @media screen and (max-width: 960px)
     .current-news
         &__card
             width: calc(100%/2 - 20px)
             &:last-child
                 display: none
+        &__img-container
+            padding: 0 25px
+        &__recent-container
+            padding: 0 25px
+        &__img-wrapper
+            &::before
+                height: 30vw
+@media only screen and (max-width: 720px)
+    .current-news
+        &__text-wrapper
+            padding-top: 42px
+            padding-bottom: 110px
+        &__text-container
+            padding-left: 25px
+            padding-right: 25px
+@media only screen and (max-width: 600px)
+    .current-news
+        &__img-container
+            padding: 0 15px
+        &__recent-container
+            padding: 0 15px
+        &__title
+            font-size: 36px
+        &__text-wrapper
+            padding-top: 32px
+            padding-bottom: 82px
+        &__cards-wrap
+            flex-direction: column
+            width: 100%
+            margin-left: 0
+        &__card
+            width: 100%
+            margin: 0
+            margin-bottom: 20px
+        &__btn
+            display: none
+        &__mobile-btn
+            display: block
+        &__recent
+            &::before
+                left: -50px
+                right: -50px
+                height: 400px
+                transform: rotate(-8deg)
