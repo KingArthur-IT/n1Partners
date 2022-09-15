@@ -266,6 +266,8 @@
 }
 
 .current-news__text-wrapper {
+  position: relative;
+  z-index: 2;
   background: #fff;
   padding-top: 64px;
   padding-bottom: 80px;
