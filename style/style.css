@@ -34,6 +34,13 @@
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .horizontal-line-wrapper {
+    width: 200px;
+    overflow: hidden;
+  }
+}
+
 .news {
   margin: auto;
 }
