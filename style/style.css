@@ -1,9 +1,17 @@
 @font-face {
   font-family: 'RockStar';
-  src: local("RockStar");
-  src: url("./n1Partners/fonts/RockStar-UltraBlack.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RockStar-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'RockStar';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RockStar-UltraBlack.woff2") format("woff2");
 }
 
 .small-container {
