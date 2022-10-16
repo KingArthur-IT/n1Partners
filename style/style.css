@@ -58,6 +58,7 @@
 
 .tournament__header {
   margin-bottom: 0;
+  position: relative;
 }
 
 .tournament__container {
@@ -77,8 +78,18 @@
 
 .tournament__hero {
   padding-top: 200px;
-  background: #fff;
+  background: #f4f4f4;
   padding-bottom: 100px;
+}
+
+.tournament__airplane {
+  width: 200px;
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .tournament__table {
@@ -96,7 +107,7 @@
 }
 
 .tournament__table tr:hover .tournament__category-name {
-  background-color: #fff !important;
+  background-color: #f4f4f4 !important;
 }
 
 .tournament__table-head {
@@ -138,4 +149,17 @@
 
 .tournament__category-first-row {
   border-top: 1px solid #151515;
+}
+
+@media screen and (max-width: 475px) {
+  .tournament__table td {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .tournament__table-head th {
+    font-size: 14px;
+  }
+  .tournament__airplane {
+    bottom: -20%;
+  }
 }
