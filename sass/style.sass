@@ -1,50 +1,60 @@
-// @font-face
-//     font-family: 'RockStar'
-//     src: local('RockStar')
-//     src: url('./n1Partners/fonts/RockStar-UltraBlack.woff2') format('woff2')
-//     font-weight: 400
-//     font-style: normal
-// @font-face 
-//   font-family: 'RockStar'
-//   font-weight: 700
-//   font-style: normal
-//   font-display: swap
-//   src: url("../fonts/RockStar-Bold.woff2") format('woff2')
-// @font-face
-//   font-family: 'RockStar'
-//   font-weight: 900
-//   font-style: normal
-//   font-display: swap
-//   src: url("../fonts/RockStar-UltraBlack.woff2") format('woff2')
+@font-face
+  font-family: 'Druk Wide'
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+  src: url("../fonts/Druk-Wide-Cy-Web-Medium-Regular.ttf") format('truetype')
+@font-face
+  font-family: 'Druk Wide'
+  font-weight: 600
+  font-style: normal
+  font-display: swap
+  src: url("../fonts/Druk Wide Cy Web Bold Regular.ttf") format('truetype')
 
-.small-container
-    max-width: 1106px
-    margin: auto
-    padding-left: 40px
-    padding-right: 40px
-.img-in-content
-  width: calc( 100vw - 300px)
+.new-container
+  position: relative
+  margin: 0 auto
+  padding: 0 40px
+  max-width: 1630px
+.title
+    font-family: 'Druk Wide'
+    font-style: normal
+    font-weight: 600
+    font-size: 48px
+    line-height: 120%
+.text
+    font-family: 'Exo 2'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 140%
 
-@media only screen and (max-width: 1240px) 
-  .small-container
-    padding-left: 150px
-    padding-right: 150px
-@media only screen and (max-width: 720px) 
-  .small-container
-    padding-left: 110px
-    padding-right: 110px
-  .img-in-content
-    width: calc( 100vw - 50px)
-  
-@media only screen and (max-width: 600px)
-  .small-container 
-    padding-left: 15px
-    padding-right: 20%
-@media only screen and (max-width: 425px)
-  .horizontal-line-wrapper
-    width: 200px
-    overflow: hidden
+@media screen and (max-width: 1630px)
+  .new-container
+    max-width: 1280px
+  .text
+    font-size: 16px
+  .title
+    font-size: 32px
 
-// @import 'allNews'
-// @import 'current-news'
-@import 'tournament'
+@media screen and (max-width: 1280px)
+  .new-container
+    max-width: 1248px
+
+@media screen and (max-width: 960px)
+  .new-container
+    max-width: 880px
+  .text
+    font-size: 14px
+  .title
+    font-size: 30px
+
+@media screen and (max-width: 720px)
+  .new-container
+    padding: 0 24px
+
+@media screen and (max-width: 425px)
+  .new-container
+    padding: 0 16px
+
+@import 'winners'
