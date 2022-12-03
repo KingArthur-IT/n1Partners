@@ -59,6 +59,15 @@
             font-size: 40px
         &__description
             margin-bottom: 10px
+    .congrats
+        padding-top: 100px
+        padding-bottom: 70px
+        &__title
+            font-size: 48px
+        &__text
+            margin-bottom: 70px
+        &__img
+            width: 950px
 
 @media screen and (max-width: 1280px)
     .winners
@@ -69,17 +78,31 @@
                 transform: translateX(-50%) rotate(-3deg)
                 height: 100px
                 bottom: -60px
+    .congrats
+        &__title
+            font-size: 32px
 
 @media screen and (max-width: 1140px)
     .winners
         &__title
             font-size: 34px
 
+@media screen and (max-width: 1024px)
+    .congrats
+        &__img
+            width: 760px
+
 @media screen and (max-width: 960px)
     .winners
         &__title
             font-size: 30px
             margin-bottom: 20px
+    .congrats
+        &__title
+            font-size: 30px
+            margin-bottom: 10px
+        &__text
+            margin-bottom: 50px
 
 @media screen and (max-width: 860px)
     .winners
@@ -90,11 +113,18 @@
             transform: translate(-20%, 0px)
             & img
                 width: 120%
+    .congrats
+        &__img
+            width: 120%
+            transform: translateX(-5%)
 
 @media screen and (max-width: 720px)
     .winners
         &__date
             font-size: 18px
+    .congrats
+        padding-top: 70px
+        padding-bottom: 50px
 
 @media screen and (max-width: 600px)
     .winners
@@ -104,6 +134,12 @@
             width: 245px
             margin: 30px auto 0
             transform: translate(-8%, 20px)
+    .congrats
+        &__title
+            font-size: 26px
+        &__img
+            width: 180%
+            transform: translateX(-21%)
 
 @media screen and (max-width: 425px)
     .winners
@@ -117,3 +153,14 @@
         display: inline
     .br-before-gift
         display: inline
+    .congrats
+        &__title
+            font-size: 23px
+            text-align: left
+        &__text
+            text-align: left
+
+@media screen and (max-width: 360px)
+    .congrats
+        &__title
+            font-size: 20px
