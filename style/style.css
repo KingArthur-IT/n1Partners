@@ -175,6 +175,149 @@
   height: 100%;
 }
 
+@media screen and (max-width: 1630px) {
+  .winners__title {
+    font-size: 40px;
+  }
+  .winners__description {
+    margin-bottom: 10px;
+  }
+  .congrats {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .congrats__title {
+    font-size: 48px;
+  }
+  .congrats__text {
+    margin-bottom: 70px;
+  }
+  .congrats__img {
+    width: 950px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .winners__date {
+    font-size: 20px;
+  }
+  .winners__header::after {
+    -webkit-transform: translateX(-50%) rotate(-3deg);
+            transform: translateX(-50%) rotate(-3deg);
+    height: 100px;
+    bottom: -60px;
+  }
+  .congrats__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .winners__title {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .congrats__img {
+    width: 760px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .winners__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .congrats__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .congrats__text {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .winners__header-content {
+    width: 70% !important;
+    padding-top: 0;
+  }
+  .winners__main-img {
+    -webkit-transform: translate(-20%, 0px);
+            transform: translate(-20%, 0px);
+  }
+  .winners__main-img img {
+    width: 120%;
+  }
+  .congrats__img {
+    width: 120%;
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .winners__date {
+    font-size: 18px;
+  }
+  .congrats {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .winners__header-content {
+    width: 90% !important;
+  }
+  .winners__main-img {
+    width: 245px;
+    margin: 30px auto 0;
+    -webkit-transform: translate(-8%, 20px);
+            transform: translate(-8%, 20px);
+  }
+  .congrats__title {
+    font-size: 26px;
+  }
+  .congrats__img {
+    width: 180%;
+    -webkit-transform: translateX(-21%);
+            transform: translateX(-21%);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .winners__header-content {
+    width: 100% !important;
+  }
+  .winners__title {
+    margin-bottom: 16px;
+  }
+  .br-before-n1 {
+    display: none;
+  }
+  .br-after-n1 {
+    display: inline;
+  }
+  .br-before-gift {
+    display: inline;
+  }
+  .congrats__title {
+    font-size: 23px;
+    text-align: left;
+  }
+  .congrats__text {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .congrats__title {
+    font-size: 20px;
+  }
+}
+
 .letter {
   cursor: pointer;
   width: 145px;
@@ -330,144 +473,189 @@
 }
 
 @media screen and (max-width: 1630px) {
-  .winners__title {
-    font-size: 40px;
+  .letter {
+    width: 110px;
+    height: 72px;
   }
-  .winners__description {
-    margin-bottom: 10px;
+  .letter__bow {
+    width: 48px;
+    height: 34px;
   }
-  .congrats {
-    padding-top: 100px;
-    padding-bottom: 70px;
+  .letter:before {
+    top: 17.9px;
   }
-  .congrats__title {
-    font-size: 48px;
+  .letter:after {
+    top: 9px;
   }
-  .congrats__text {
-    margin-bottom: 70px;
+  .letter1100 {
+    top: 60px;
+    -webkit-transform: translateX(-110px);
+            transform: translateX(-110px);
   }
-  .congrats__img {
-    width: 950px;
+  .letter700 {
+    top: 180px;
+    -webkit-transform: translateX(-160px) rotate(-30deg);
+            transform: translateX(-160px) rotate(-30deg);
   }
-}
-
-@media screen and (max-width: 1280px) {
-  .winners__date {
-    font-size: 20px;
+  .letter450 {
+    top: 240px;
+    -webkit-transform: translateX(0px) rotate(30deg);
+            transform: translateX(0px) rotate(30deg);
   }
-  .winners__header::after {
-    -webkit-transform: translateX(-50%) rotate(-3deg);
-            transform: translateX(-50%) rotate(-3deg);
-    height: 100px;
-    bottom: -60px;
+  .letter250 {
+    top: 340px;
+    -webkit-transform: translateX(-190px) rotate(-30deg);
+            transform: translateX(-190px) rotate(-30deg);
   }
-  .congrats__title {
-    font-size: 32px;
+  .letter150 {
+    top: 380px;
+    -webkit-transform: translateX(60px) rotate(30deg);
+            transform: translateX(60px) rotate(30deg);
   }
-}
-
-@media screen and (max-width: 1140px) {
-  .winners__title {
-    font-size: 34px;
+  .letter80 {
+    top: 460px;
+    -webkit-transform: translateX(-120px) rotate(-30deg);
+            transform: translateX(-120px) rotate(-30deg);
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .congrats__img {
-    width: 760px;
+  .letter {
+    width: 92px;
+    height: 60px;
+    font-size: 10px;
   }
-}
-
-@media screen and (max-width: 960px) {
-  .winners__title {
-    font-size: 30px;
-    margin-bottom: 20px;
+  .letter__bow {
+    top: 7px;
+    width: 40px;
+    height: 28px;
   }
-  .congrats__title {
-    font-size: 30px;
-    margin-bottom: 10px;
+  .letter:before {
+    width: 26px;
+    height: 26px;
+    top: 15.5px;
+    left: calc(50% - 13.2px);
   }
-  .congrats__text {
-    margin-bottom: 50px;
+  .letter:after {
+    width: 40px;
+    height: 40px;
+    top: 8.5px;
+    left: calc(50% - 20px);
+  }
+  .letter1100 {
+    top: 40px;
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+  .letter700 {
+    top: 130px;
+    -webkit-transform: translateX(-120px) rotate(-30deg);
+            transform: translateX(-120px) rotate(-30deg);
+  }
+  .letter450 {
+    top: 195px;
+    -webkit-transform: translateX(0px) rotate(30deg);
+            transform: translateX(0px) rotate(30deg);
+  }
+  .letter250 {
+    top: 270px;
+    -webkit-transform: translateX(-150px) rotate(-30deg);
+            transform: translateX(-150px) rotate(-30deg);
+  }
+  .letter150 {
+    top: 300px;
+    -webkit-transform: translateX(40px) rotate(30deg);
+            transform: translateX(40px) rotate(30deg);
+  }
+  .letter80 {
+    top: 370px;
+    -webkit-transform: translateX(-100px) rotate(-30deg);
+            transform: translateX(-100px) rotate(-30deg);
   }
 }
 
 @media screen and (max-width: 860px) {
-  .winners__header-content {
-    width: 70% !important;
-    padding-top: 0;
+  .letter1100 {
+    top: 40px;
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
   }
-  .winners__main-img {
-    -webkit-transform: translate(-20%, 0px);
-            transform: translate(-20%, 0px);
+  .letter700 {
+    top: 27%;
+    -webkit-transform: translateX(-120px) rotate(-30deg);
+            transform: translateX(-120px) rotate(-30deg);
   }
-  .winners__main-img img {
-    width: 120%;
+  .letter450 {
+    top: 36%;
+    -webkit-transform: translateX(0px) rotate(30deg);
+            transform: translateX(0px) rotate(30deg);
   }
-  .congrats__img {
-    width: 120%;
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
+  .letter250 {
+    top: 51%;
+    -webkit-transform: translateX(-150px) rotate(-30deg);
+            transform: translateX(-150px) rotate(-30deg);
   }
-}
-
-@media screen and (max-width: 720px) {
-  .winners__date {
-    font-size: 18px;
+  .letter150 {
+    top: 55%;
+    -webkit-transform: translateX(40px) rotate(30deg);
+            transform: translateX(40px) rotate(30deg);
   }
-  .congrats {
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .winners__header-content {
-    width: 90% !important;
-  }
-  .winners__main-img {
-    width: 245px;
-    margin: 30px auto 0;
-    -webkit-transform: translate(-8%, 20px);
-            transform: translate(-8%, 20px);
-  }
-  .congrats__title {
-    font-size: 26px;
-  }
-  .congrats__img {
-    width: 180%;
-    -webkit-transform: translateX(-21%);
-            transform: translateX(-21%);
+  .letter80 {
+    top: 71%;
+    -webkit-transform: translateX(-100px) rotate(-30deg);
+            transform: translateX(-100px) rotate(-30deg);
   }
 }
 
 @media screen and (max-width: 425px) {
-  .winners__header-content {
-    width: 100% !important;
+  .letter {
+    width: 80px;
+    height: 50px;
   }
-  .winners__title {
-    margin-bottom: 16px;
+  .letter__bow {
+    top: 4px;
+    width: 33px;
+    height: 23px;
   }
-  .br-before-n1 {
-    display: none;
+  .letter:before {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: calc(50% - 10.4px);
   }
-  .br-after-n1 {
-    display: inline;
+  .letter:after {
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: calc(50% - 15px);
   }
-  .br-before-gift {
-    display: inline;
+  .letter1100 {
+    top: 40px;
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
   }
-  .congrats__title {
-    font-size: 23px;
-    text-align: left;
+  .letter700 {
+    -webkit-transform: translateX(-110px) rotate(-30deg);
+            transform: translateX(-110px) rotate(-30deg);
   }
-  .congrats__text {
-    text-align: left;
+  .letter450 {
+    top: 36%;
+    -webkit-transform: translateX(0px) rotate(30deg);
+            transform: translateX(0px) rotate(30deg);
   }
-}
-
-@media screen and (max-width: 360px) {
-  .congrats__title {
-    font-size: 20px;
+  .letter250 {
+    top: 51%;
+    -webkit-transform: translateX(-120px) rotate(-30deg);
+            transform: translateX(-120px) rotate(-30deg);
+  }
+  .letter150 {
+    top: 55%;
+    -webkit-transform: translateX(30px) rotate(30deg);
+            transform: translateX(30px) rotate(30deg);
+  }
+  .letter80 {
+    top: 71%;
+    -webkit-transform: translateX(-80px) rotate(-30deg);
+            transform: translateX(-80px) rotate(-30deg);
   }
 }
