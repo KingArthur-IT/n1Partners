@@ -127,6 +127,7 @@
   font-size: 48px;
   line-height: 1.15;
   margin-bottom: 30px;
+  letter-spacing: 0;
 }
 
 .winners__description {
@@ -156,6 +157,8 @@
 .congrats__title {
   color: #101521;
   margin-bottom: 30px;
+  letter-spacing: 0;
+  font-weight: 500;
 }
 
 .congrats__text {
@@ -206,6 +209,9 @@
             transform: translateX(-50%) rotate(-3deg);
     height: 100px;
     bottom: -60px;
+  }
+  .winners__header-content {
+    width: 60% !important;
   }
   .congrats__title {
     font-size: 32px;
