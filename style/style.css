@@ -37,6 +37,10 @@
   line-height: 140%;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1630px) {
   .new-container {
     max-width: 1280px;
@@ -680,6 +684,7 @@
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
   padding: 130px 40px 50px;
+  overflow-x: hidden;
 }
 
 .wins-modal.displayed {
@@ -867,11 +872,11 @@
 
 @media screen and (max-width: 500px) {
   .wins-modal {
-    padding: 60px 30px 30px;
+    padding: 40px 30px 30px;
   }
   .wins-modal__container::before {
-    -webkit-transform: translate(15px, -60px) rotate(-6deg);
-            transform: translate(15px, -60px) rotate(-6deg);
+    -webkit-transform: translate(5px, -40px) rotate(-6deg);
+            transform: translate(5px, -40px) rotate(-6deg);
   }
   .wins-modal__hero {
     padding: 30px;

@@ -11,6 +11,7 @@
     opacity: 0
     transition: opacity .3s ease
     padding: 130px 40px 50px
+    overflow-x: hidden
     &.displayed
         display: block
     &.visible
@@ -133,10 +134,10 @@
 
 @media screen and (max-width: 500px)
     .wins-modal
-        padding: 60px 30px 30px
+        padding: 40px 30px 30px
         &__container
             &::before
-                transform: translate(15px, -60px) rotate(-6deg)
+                transform: translate(5px, -40px) rotate(-6deg)
         &__hero
             padding: 30px
             &::before
