@@ -659,3 +659,273 @@
             transform: translateX(-80px) rotate(-30deg);
   }
 }
+
+.wins-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 100;
+  overflow-y: scroll;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  padding: 130px 40px 50px;
+}
+
+.wins-modal.displayed {
+  display: block;
+}
+
+.wins-modal.visible {
+  opacity: 1;
+}
+
+.wins-modal__container {
+  min-height: 100%;
+  width: 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wins-modal__container::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/modal-before.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(0, -80px) rotate(-8deg);
+          transform: translate(0, -80px) rotate(-8deg);
+  z-index: -1;
+}
+
+.wins-modal__hero {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  background: url("../img/modal-bg.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.wins-modal__hero::before {
+  content: '';
+  position: absolute;
+  width: 172px;
+  height: 172px;
+  right: 0;
+  top: 0;
+  background: url("../img/venok.png") no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform: translate(45px, -45px);
+          transform: translate(45px, -45px);
+}
+
+.wins-modal__hero::after {
+  content: '';
+  position: absolute;
+  width: 172px;
+  height: 172px;
+  left: 0;
+  bottom: 0;
+  background: url("../img/venok.png") no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform: translate(-45px, 45px) rotate(180deg);
+          transform: translate(-45px, 45px) rotate(180deg);
+}
+
+.wins-modal__title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #151515;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.wins-modal__content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.wins-modal__close {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #101521;
+  font-family: 'Exo 2';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  padding: 10px 50px;
+}
+
+.wins-modal__list {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 25px;
+}
+
+.wins-modal__item {
+  font-family: 'Exo 2';
+  font-size: 18px;
+  color: #151515;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #151515;
+}
+
+.wins-modal__item:nth-child(5n) {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .wins-modal__title {
+    font-size: 28px;
+  }
+  .wins-modal__container {
+    width: 780px;
+  }
+  .wins-modal__item {
+    font-size: 16px;
+  }
+  .wins-modal__close {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .wins-modal__container {
+    width: 100%;
+  }
+  .wins-modal__list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 425px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wins-modal {
+    padding: 60px 30px 30px;
+  }
+  .wins-modal__container::before {
+    -webkit-transform: translate(15px, -60px) rotate(-6deg);
+            transform: translate(15px, -60px) rotate(-6deg);
+  }
+  .wins-modal__hero {
+    padding: 30px;
+  }
+  .wins-modal__hero::before {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translate(30px, -25px);
+            transform: translate(30px, -25px);
+  }
+  .wins-modal__hero::after {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translate(-30px, 25px) rotate(180deg);
+            transform: translate(-30px, 25px) rotate(180deg);
+  }
+  .wins-modal__title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .wins-modal__close {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  .wins-modal__list {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  .wins-modal__item {
+    margin-bottom: 5px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wins-modal__list {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wins-modal__item {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .wins-modal__hero {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .wins-modal__item {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .wins-modal__item {
+    font-size: 12px;
+  }
+}
