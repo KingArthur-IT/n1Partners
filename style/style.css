@@ -812,6 +812,12 @@
   font-size: 18px;
   line-height: 140%;
   padding: 10px 50px;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+}
+
+.wins-modal__close:hover {
+  background-color: #212b43;
 }
 
 .wins-modal__list {
