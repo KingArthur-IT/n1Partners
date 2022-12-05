@@ -489,8 +489,8 @@
   }
   .letter1100 {
     top: 60px;
-    -webkit-transform: translateX(-110px);
-            transform: translateX(-110px);
+    -webkit-transform: translateX(-90px);
+            transform: translateX(-90px);
   }
   .letter700 {
     top: 180px;
