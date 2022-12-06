@@ -175,6 +175,9 @@
   position: relative;
   width: 1200px;
   margin: 0 auto;
+  background: url("../img/tree-bg.png") no-repeat;
+  background-position-y: 150%;
+  background-size: 100% auto;
 }
 
 .congrats__tree {
@@ -591,27 +594,27 @@
             transform: translateX(-70px);
   }
   .letter700 {
-    top: 27%;
+    top: 29%;
     -webkit-transform: translateX(-120px) rotate(-30deg);
             transform: translateX(-120px) rotate(-30deg);
   }
   .letter450 {
-    top: 36%;
+    top: 40%;
     -webkit-transform: translateX(0px) rotate(30deg);
             transform: translateX(0px) rotate(30deg);
   }
   .letter250 {
-    top: 51%;
+    top: 55%;
     -webkit-transform: translateX(-150px) rotate(-30deg);
             transform: translateX(-150px) rotate(-30deg);
   }
   .letter150 {
-    top: 55%;
+    top: 61%;
     -webkit-transform: translateX(40px) rotate(30deg);
             transform: translateX(40px) rotate(30deg);
   }
   .letter80 {
-    top: 71%;
+    top: 77%;
     -webkit-transform: translateX(-100px) rotate(-30deg);
             transform: translateX(-100px) rotate(-30deg);
   }
@@ -645,26 +648,27 @@
             transform: translateX(-70px);
   }
   .letter700 {
+    top: 29%;
     -webkit-transform: translateX(-110px) rotate(-30deg);
             transform: translateX(-110px) rotate(-30deg);
   }
   .letter450 {
-    top: 36%;
+    top: 40%;
     -webkit-transform: translateX(0px) rotate(30deg);
             transform: translateX(0px) rotate(30deg);
   }
   .letter250 {
-    top: 51%;
+    top: 55%;
     -webkit-transform: translateX(-120px) rotate(-30deg);
             transform: translateX(-120px) rotate(-30deg);
   }
   .letter150 {
-    top: 55%;
+    top: 61%;
     -webkit-transform: translateX(30px) rotate(30deg);
             transform: translateX(30px) rotate(30deg);
   }
   .letter80 {
-    top: 71%;
+    top: 77%;
     -webkit-transform: translateX(-80px) rotate(-30deg);
             transform: translateX(-80px) rotate(-30deg);
   }
